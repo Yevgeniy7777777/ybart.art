@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YB ART | Photography</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    header {
+      padding: 28px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8%;
+    }
+
+    h1 {
+      font-size: clamp(45px, 7vw, 90px);
+      margin: 0;
+      max-width: 900px;
+      line-height: 1;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #bbb;
+      margin-top: 25px;
+    }
+
+    .services {
+      padding: 60px 8% 100px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service {
+      border-top: 1px solid #555;
+      padding-top: 25px;
+    }
+
+    .service h2 {
+      font-size: 24px;
+    }
+
+    .service p {
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 35px 8%;
+      border-top: 1px solid #333;
+      color: #888;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        display: none;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">YB ART</div>
+
+  <nav>
+    <a href="#commercial">Commercial</a>
+    <a href="#headshots">Headshots</a>
+    <a href="#fashion">Fashion</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Photography for People, Spaces & Brands.</h1>
+  <p>Dallas–Fort Worth, Texas</p>
+</section>
+
+<section class="services">
+
+  <div class="service" id="commercial">
+    <h2>Commercial Real Estate</h2>
+    <p>
+      Interior, exterior and FAA Part 107 drone photography
+      for commercial properties.
+    </p>
+  </div>
+
+  <div class="service" id="headshots">
+    <h2>Actor Headshots</h2>
+    <p>
+      Professional headshots and portfolio photography
+      for actors and performers.
+    </p>
+  </div>
+
+  <div class="service" id="fashion">
+    <h2>Fashion</h2>
+    <p>
+      Fashion, editorial and model portfolio photography.
+    </p>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 YB ART
+</footer>
+
+</body>
+</html>
